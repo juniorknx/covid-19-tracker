@@ -1,0 +1,59 @@
+#cov-stats {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .card {
+        flex: 1 1 302px;
+        padding: 20px 10px 20px 10px;
+        margin: 10px;
+        background: white;
+        border-radius: 8px;
+        border: solid 1px #ececec;
+    }
+
+    .card-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        
+        h4 {
+            font-size: 20px;
+        }
+
+        img {
+            width: 9%;
+            margin:4px 10px 4px 24px;
+            animation: spin 4s infinite;
+
+            @keyframes spin {
+                from {transform:rotate(0deg);}
+                to {transform:rotate(360deg);}
+              }
+        }
+    }
+
+    .card-content {
+        text-align: center;
+
+        h4 {
+            font-weight: 500;
+            font-size: 15px;
+            color: #777777;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+
+            span {
+                margin-left: 7px;
+            }
+        }
+
+    }
+}
