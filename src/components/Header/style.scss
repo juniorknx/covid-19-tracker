@@ -1,6 +1,8 @@
 header {
     background: #fff;
     border-bottom: solid 1px #efefef;
+    background: url('../../assets/background.png');
+    background-size: cover;
 
     .menu {
     display: flex;
@@ -14,12 +16,12 @@ header {
 
     h3 {
         font-size: 24.59px;
-        color: #193148;
+        color: #fff;
     }
 
     span {
         font-size: 24.59px;
-        color: gray;
+        color: #fff;
     }
 
     img {
