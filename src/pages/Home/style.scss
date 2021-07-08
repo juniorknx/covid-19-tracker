@@ -1,6 +1,6 @@
 #cov-stats {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 120px auto 90px auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -11,7 +11,8 @@
         margin: 10px;
         background: white;
         border-radius: 8px;
-        border: solid 1px #ececec;
+        border: 1px solid #e6e6e6;
+        box-shadow: 0 0 10px #e3f1fd;
     }
 
     .card-header {
