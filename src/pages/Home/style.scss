@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
     .card {
         flex: 1 1 302px;
@@ -11,8 +12,8 @@
         margin: 10px;
         background: white;
         border-radius: 8px;
-        border: 1px solid #e6e6e6;
         box-shadow: 0 0 10px #e3f1fd;
+        max-width: 25%;
     }
 
     .card-header {
@@ -56,5 +57,11 @@
             }
         }
 
+    }
+}
+
+@media(max-width:667px){
+    #cov-stats > .card {
+        max-width: 80%;
     }
 }

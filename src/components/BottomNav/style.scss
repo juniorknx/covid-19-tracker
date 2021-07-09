@@ -1,0 +1,43 @@
+  .navbar {
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 1px #efefef;
+    border-radius: 25px 25px 0 0;
+
+    a {
+        float: left;
+        display: block;
+        color: #193148;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 13px;
+        
+        &:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        img{
+            width: 29px;
+        }
+    }
+}
+
+@media(min-width:1200px){
+    .navbar{
+        display: none;
+    }
+}
+
+
+@media(min-width:768px){
+    .navbar {
+        display: none;
+    }
+}
