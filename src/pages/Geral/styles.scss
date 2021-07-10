@@ -1,0 +1,58 @@
+#cov-geral {
+    max-width: 1200px;
+    margin: 120px auto 90px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .panel {
+        background: white;
+        margin: 20px;
+        padding: 2em 3em 2em 3em;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #e3f1fd;
+        flex: 1 1 300px;
+    }
+
+    .panel-header {
+        display: flex;
+
+        h1 {
+            font-size: 19px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #3c3c3c;
+        }
+
+        img {
+            width: 25px;
+            margin: 0px 0px 11px 35px;
+            transform: rotate(91deg);
+        }
+    }
+
+    .panel-body {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-size: 21px;
+            font-weight: 500;
+            color: #3c3c3c;
+        }
+
+        h4 {
+            font-size: 13.3px;
+            font-weight: 500;
+            color: #6b6b6b;
+        }
+    }
+}
