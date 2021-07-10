@@ -10,25 +10,25 @@ export function BottomNav(){
         <>
         <div class="navbar">
             <Link to="/">
-                <img src={home} title={home} />
+                <img src={home} title={home} alt={home} />
                     <br></br>
                 <span>Inicio</span>
             </Link>
 
-            <Link to="/">
-                <img src={graph} title={graph} />
+            <Link to="/geral">
+                <img src={graph} title={graph} alt={graph} />
                     <br></br>
                 <span>Geral</span>
             </Link>
 
             <Link to="/">
-                <img src={sintomas} title={sintomas} />
+                <img src={sintomas} title={sintomas} alt={sintomas} />
                     <br></br>
                 <span>Sintomas</span>
             </Link>
 
             <Link to="/">
-                <img src={tips} title={tips} />
+                <img src={tips} title={tips} alt={tips} />
                     <br></br>
                 <span>Dicas</span>
             </Link>
