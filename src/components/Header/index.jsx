@@ -1,8 +1,6 @@
 import '../Header/style.scss';
 import imglogo from '../../assets/imglogo.png'
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faVirus } from '@fortawesome/free-solid-svg-icons';
 
 export function Header() {
     return (
@@ -10,12 +8,16 @@ export function Header() {
             <div className="menu">
                 <div>
                     <h3>CORONAVÍRUS</h3>
-                    <img src={imglogo} />
+                    <img src={imglogo} alt={imglogo} />
                     <span>BRASIL</span>
                 </div>
                 <nav>
                 <Link to="/">
                     Início
+                </Link>
+
+                <Link to="/geral">
+                    Geral
                 </Link>
 
                 <Link to="/local">
@@ -24,10 +26,6 @@ export function Header() {
 
                 <Link to="/">
                     Dicas
-                </Link>
-
-                <Link to="/">
-                    Author
                 </Link>
                 </nav>
             </div>

@@ -2,7 +2,6 @@ import '../Home/style.scss';
 import { api } from "../../services/api";
 import { useEffect, useState } from "react";
 import covidao from '../../assets/covidao.png';
-import { Updated } from '../../components/Updated';
 import CountUp from 'react-countup';
 
 export function Home() {
@@ -12,7 +11,6 @@ export function Home() {
     useEffect(()=>{
         async function loadCovdata(){
             const response = await api.get('/prod/PortalEstado')
-            console.log(response.data)
             setEstados(response.data)
         }
 
@@ -27,7 +25,7 @@ export function Home() {
                     <div className="card">
                         <div className="card-header">
                             <h4>Estado: {states.nome}</h4>
-                            <img src={covidao} title={covidao} />
+                            <img src={covidao} title={covidao} alt={covidao} />
                         </div>
                         <div className="card-content">
                             <div>
