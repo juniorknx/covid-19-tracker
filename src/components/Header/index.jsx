@@ -20,7 +20,7 @@ export function Header() {
                     Geral
                 </Link>
 
-                <Link to="/local">
+                <Link to="/sintomas">
                     Sintomas
                 </Link>
 

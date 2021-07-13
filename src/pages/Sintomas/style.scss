@@ -1,0 +1,17 @@
+#sintomas {
+    max-width: 1200px;
+    margin: 120px auto 90px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sintomas-info {
+    background: #fff;
+    padding: 20px 20px 20px 20px;
+
+    h1 {
+        text-align: center;
+    }
+}
