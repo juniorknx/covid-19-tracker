@@ -23,10 +23,6 @@ export function Header() {
                 <Link to="/sintomas">
                     Sintomas
                 </Link>
-
-                <Link to="/">
-                    Dicas
-                </Link>
                 </nav>
             </div>
         </header>

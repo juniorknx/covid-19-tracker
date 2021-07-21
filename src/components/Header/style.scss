@@ -54,7 +54,11 @@ header {
 }
 
 @media(max-width:667px){
+    header .menu {
+        padding: 16px 0;
+    }
+
     nav {
-        display: none;
+        margin-top: 10px;
     }
 }

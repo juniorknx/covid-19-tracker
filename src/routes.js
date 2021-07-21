@@ -4,7 +4,6 @@ import { Home } from "./pages/Home";
 import { Geral } from "./pages/Geral";
 import { errorPage } from "./pages/404";
 import { Header } from "./components/Header";
-import { BottomNav } from "./components/BottomNav/BottomNav";
 import { Sintomas } from "./pages/Sintomas";
 export const Routes = () => {
     return (
@@ -16,7 +15,6 @@ export const Routes = () => {
                     <Route exact path="/sintomas" component={Sintomas} />
                     <Route path="*" component={errorPage} />
                 </Switch>
-            <BottomNav />
         </BrowserRouter>
     )
 }
