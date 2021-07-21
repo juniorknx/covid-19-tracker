@@ -12,7 +12,7 @@
     padding: 3em 2em 3em 3em;
     border-radius: 8px;
     box-shadow: 0 0 10px #e3f1fd;
-    width: 79%;
+    width: 50%;
 
     h1 {
         text-align: center;
@@ -22,12 +22,19 @@
     }
 
     li {
-        margin: 22px;
+        margin: 20px 20px 23px 20px;
         color: #3e3e3e;
         font-size: 15px;
     }
 
     li::marker{
         color:#4634a9;
+    }
+}
+
+@media(max-width:736px){
+    .sintomas-info{
+        width: 85%;
+        padding: 3em 1em 3em 1em;
     }
 }

@@ -24,7 +24,7 @@ export function Home() {
                 return(
                     <div className="card">
                         <div className="card-header">
-                            <h4>Estado: {states.nome}</h4>
+                            <h4>ESTADO: {states.nome}</h4>
                             <img src={covidao} title={covidao} alt={covidao} />
                         </div>
                         <div className="card-content">
