@@ -12,14 +12,18 @@
     "axios": "^0.21.1",
     "css-loader": "^5.2.6",
     "date-fns": "^2.22.1",
+    "lottie": "0.0.1",
+    "lottie-web": "^5.7.12",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-countup": "^4.4.0",
     "react-dom": "^17.0.2",
+    "react-lottie": "^1.2.3",
     "react-router-dom": "^5.2.0",
     "react-script": "^2.0.5",
     "react-scripts": "4.0.3",
     "sass": "^1.35.1",
+    "web": "0.0.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

@@ -2,6 +2,8 @@ import "../Geral/styles.scss";
 import { useEffect, useState } from "react";
 import setadown from "../../assets/setadown.svg"
 import CountUp from "react-countup";
+import Lottie from "react-lottie"
+import dashboard from '../../animations/dashboard.json';
 
 export function Geral() {
 
@@ -61,6 +63,17 @@ export function Geral() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="bar-animate">
+                <Lottie options={{
+                    animationData:dashboard,
+                    autoplay:true,
+                    loop:true,
+                }}
+                width={500}
+                height={400}
+                />
             </div>
         </section>
     )
