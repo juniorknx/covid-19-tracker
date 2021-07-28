@@ -1,7 +1,8 @@
 import '../Home/style.scss';
 import { api } from "../../services/api";
 import { useEffect, useState } from "react";
-import covidao from '../../assets/covidao.png';
+import charts from '../../assets/charts.png';
+import setadown from '../../assets/setadown.svg';
 import CountUp from 'react-countup';
 
 export function Home() {
@@ -25,15 +26,15 @@ export function Home() {
                     <div className="card">
                         <div className="card-header">
                             <h4>ESTADO: {states.nome}</h4>
-                            <img src={covidao} title={covidao} alt={covidao} />
+                            <img src={setadown} title={setadown} alt={setadown} />
                         </div>
                         <div className="card-content">
                             <div>
-                            <h4>Total de Casos:</h4>
+                            <h4>Total Casos</h4>
                             <CountUp start={0} end={states.casosAcumulado} separator="." />
                             </div>
                             <div>
-                            <h4>Total de Óbitos:</h4> 
+                            <h4>Total Óbitos</h4> 
                             <CountUp start={0} end={states.obitosAcumulado} separator="." />
                             </div>
                         </div>
