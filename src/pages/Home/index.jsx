@@ -1,7 +1,6 @@
 import '../Home/style.scss';
 import { api } from "../../services/api";
 import { useEffect, useState } from "react";
-import charts from '../../assets/charts.png';
 import setadown from '../../assets/setadown.svg';
 import CountUp from 'react-countup';
 
