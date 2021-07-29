@@ -10,11 +10,11 @@ export function Footer(){
                 <div>
                     <span>Desenvolvido por: Julio</span>
                     <div className="social-icons">
-                        <a href="https://github.com/juniorknx" target="_blank">
+                        <a href="https://github.com/juniorknx" target="_blank" rel="Github">
                             <img src={monstgithub} alt="Github" title="github" to="https://github.com/juniorknx" />
                         </a>
 
-                        <a href="https://www.linkedin.com/in/julio-junior-ba665015b/" target="_blank">
+                        <a href="https://www.linkedin.com/in/julio-junior-ba665015b/" target="_blank" rel="Linkedin">
                             <img src={linkedin} alt="linkedin" title="linkedin" />
                         </a>
                     </div>
@@ -22,7 +22,7 @@ export function Footer(){
                 <div>
                     <span>Fonte de dados: API DataSus</span>
                     <div className="font-dados">
-                        <a href="https://servicos-datasus.saude.gov.br/" target="_blank">
+                        <a href="https://servicos-datasus.saude.gov.br/" target="_blank" rel="Datasus">
                             <img src={logodatasus} title="DataSus" alt="DataSus" />
                         </a>
                     </div>
