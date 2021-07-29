@@ -71,7 +71,7 @@ export function Geral() {
                     autoplay:true,
                     loop:true,
                 }}
-                width={500}
+                width={700}
                 height={400}
                 />
             </div>
