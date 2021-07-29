@@ -11,8 +11,8 @@ export const Routes = () => {
         <BrowserRouter>
             <Header />
                 <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/geral" component={Geral} />
+                    <Route exact path="/geral" component={Home} />
+                    <Route exact path="/" component={Geral} />
                     <Route exact path="/sintomas" component={Sintomas} />
                     <Route path="*" component={errorPage} />
                 </Switch>
