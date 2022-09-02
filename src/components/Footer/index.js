@@ -2,6 +2,7 @@ import '../Footer/style.scss';
 import logodatasus from '../../assets/logodatasus.png';
 import monstgithub from '../../assets/monstgithub.svg';
 import linkedin from '../../assets/linkedin.svg';
+import { Updated } from '../Updated';
 
 export function Footer(){
     return(
@@ -24,9 +25,11 @@ export function Footer(){
                 <div className="font-dados">
                     <a href="https://servicos-datasus.saude.gov.br/" target="_blank" rel="Datasus">
                         <img src={logodatasus} title="DataSus" alt="DataSus" />
+                        
                     </a>
                 </div>
                     <span>Fonte de dados: API DataSus</span>
+                    <Updated />
                 </div>
             </div>
         </footer>

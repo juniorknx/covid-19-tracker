@@ -1,5 +1,6 @@
 import { lastUpdated } from "../../services/api";
 import { useEffect, useState } from "react";
+import '../Updated/styles.scss';
 
 export function Updated () {
 
@@ -15,9 +16,21 @@ export function Updated () {
 
     }, []);
 
+    function padTo2Digits(num) {
+        return num.toString().padStart(2, '0');
+      }
+
+    function formatDate(date) {
+        return [
+          padTo2Digits(date.getDate()),
+          padTo2Digits(date.getMonth() + 1),
+          date.getFullYear(),
+        ].join('/');
+      }
+
     return(
         <div>
-            <p>{updatedlast.dt_updated}</p>
+            <span className="dateUpdate">Ultima atualização em: {(formatDate(new Date(updatedlast.dt_updated || 'Carregando...')))}</span>
         </div>
     );
 }
