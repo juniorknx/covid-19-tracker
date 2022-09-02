@@ -31,13 +31,7 @@
         img {
             width: 8%;
             margin:4px 10px 4px 11px;
-            animation: spin 3s;
             transform: rotate(91deg);
-            /*
-            @keyframes spin {
-                from {transform:rotate(0deg);}
-                to {transform:rotate(360deg);}
-              } */ 
         }
     }
 
