@@ -30,7 +30,7 @@ export function Updated () {
 
     return(
         <div>
-            <span className="dateUpdate">Ultima atualização em: {(formatDate(new Date(updatedlast.dt_updated || 'Carregando...')))}</span>
+            <span className="dateUpdate">Atualizado em: {(formatDate(new Date(updatedlast.dt_updated || 'Carregando...')))}</span>
         </div>
     );
 }
