@@ -77,4 +77,14 @@
       opacity: 0;
     }
   }
+
+@media screen and (min-width: 390px) and (max-width:920px){
+  .lds-spinner {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80vh;
+    left: 2em;
+    }
+}
   

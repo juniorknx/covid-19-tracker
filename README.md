@@ -15,10 +15,10 @@ Front End Developer
   
 ## Instalar o projeto
 
-Install my-project with yarn
+Install with yarn || npm
 
 ```bash
-  yarn install my-project
+  yarn install
   cd my-project
 ```
     
