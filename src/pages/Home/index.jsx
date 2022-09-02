@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import setadown from '../../assets/setadown.svg';
 import GeralCard from '../../components/GeralCard';
 import Loader from '../../components/Loader';
+import { Head } from '../../Head';
 
 export function Home() {
 
@@ -19,24 +20,27 @@ export function Home() {
         loadCovdata();
     }, []);
 
-    if(loading == true){
+    if (loading == true) {
         return <Loader />
     }
 
     return (
-        <section id="cov-stats">
-            {estados.map(({ nome, casosAcumulado, obitosAcumulado }) => {
-                return (
-                    <>
-                        <GeralCard
-                            stateName={nome}
-                            icon={setadown}
-                            totalCases={casosAcumulado}
-                            totalDeaths={obitosAcumulado}
-                        />
-                    </>
-                )
-            })}
-        </section>
+        <>
+            <Head title="Geral" />
+            <section id="cov-stats">
+                {estados.map(({ nome, casosAcumulado, obitosAcumulado }) => {
+                    return (
+                        <>
+                            <GeralCard
+                                stateName={nome}
+                                icon={setadown}
+                                totalCases={casosAcumulado}
+                                totalDeaths={obitosAcumulado}
+                            />
+                        </>
+                    )
+                })}
+            </section>
+        </>
     )
 }
