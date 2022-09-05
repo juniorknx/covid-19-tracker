@@ -5,15 +5,18 @@ import CountUp from "react-countup";
 import Lottie from "react-lottie"
 import dashboard from '../../animations/dashboard.json';
 import { Head } from "../../Head";
+import { api } from "../../services/api";
 
 export function Geral() {
 
     const [general, setGeneral] = useState({ confirmados: [], obitos: [] }); //< Quando o retorno é objeto, nome da chave e seguido de um array vazio.
 
     useEffect(() => {
-        fetch('https://xx9p7hp1p7.execute-api.us-east-1.amazonaws.com/prod/PortalGeralApi')
-            .then((response) => response.json())
-            .then((data) => setGeneral(data));
+        async function loadCovdata() {
+            const response = await api.get('/prod/PortalGeralApi')
+            setGeneral(response.data)
+        }
+        loadCovdata();
     }, []);
 
     return (

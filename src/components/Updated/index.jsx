@@ -1,7 +1,6 @@
 import { api } from "../../services/api";
 import { useEffect, useState } from "react";
 import '../Updated/styles.scss';
-import Loader from "../Loader";
 
 export function Updated () {
 
