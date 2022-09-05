@@ -1,17 +1,19 @@
-import { lastUpdated } from "../../services/api";
+import { api } from "../../services/api";
 import { useEffect, useState } from "react";
 import '../Updated/styles.scss';
+import Loader from "../Loader";
 
 export function Updated () {
 
     const [updatedlast, setUpdatedlast] = useState([]);
+    const [Loading, setLoading ] = useState(true)
 
     useEffect(()=>{
         async function loadUpdated () {
-            const response = await lastUpdated.get('/prod/PortalGeralApi')
+            const response = await api.get('/prod/PortalGeralApi')
             setUpdatedlast(response.data)
+            setLoading(false)
         }
-
         loadUpdated();
 
     }, []);
@@ -30,7 +32,7 @@ export function Updated () {
 
     return(
         <div>
-            <span className="dateUpdate">Atualizado em: {(formatDate(new Date(updatedlast.dt_updated || 'Carregando...')))}</span>
+            <span className="dateUpdate">Atualizado em: {Loading === false ? (formatDate(new Date(updatedlast.dt_updated))) : 'Carregando...'}</span>
         </div>
     );
 }
